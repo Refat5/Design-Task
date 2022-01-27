@@ -1,6 +1,7 @@
 body{
     background-color: #eee; 
     color: #5e5e5e;
+    font-family: inherit;
 }
  a{
   color: #5e5e5e ;
@@ -8,14 +9,30 @@ body{
   font-size: 15px;
 }
  a:hover{
-    color: #155724 ;
+    color: #438753 ;
     text-decoration: none;
   }
+
+
+
+  
 .fcard-header1{
     justify-content: space-between;
 }
+.fcard-header2 a{
+    margin-right: 2rem;
+}
+.icon-alert {
+    background: bisque;
+    border-radius: 20px;
+    color: #e38c1c;
+  
+}
 .table-body strong{
     font-size: 22px;
+}
+.image-btn-card i{
+  margin-right: 1rem;
 }
 .invoice-rent{
     color: #a54912;
@@ -48,15 +65,80 @@ body{
     width: 30%;
     margin-right:3%;
 }
+.action-btn .fa-bolt {
+    font-size: 17px;
+}
+.ml-auto i {
+    font-weight: 500;
+    font-size: 21px;
+}
+
+#search {
+    -webkit-box-align: center;
+    align-items: center;
+    background: #f7f7f7;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 42px;
+    padding: 17px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* serch box css */
+
+
+
+#search button,
+#search input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    outline: 0;
+ 
+}
+
+#button i {
+    font-size: 23px
+}
+
+#search button {
+    cursor: pointer;
+    padding: 0 0.25em
+}
+
+#search input {
+    -webkit-box-flex: 1;
+    flex: 1;
+   
+}
+
+#search input::placeholder {
+    color: rgb(20, 18, 18)
+}
+
 .fcard-header2 a:hover{
-    color: #155724 ;
+    color: #438753 ;
     text-decoration: underline;
+}
+.div-branch span{
+
+    font-size: 16px;
+    line-height: 31px;
+
 }
 .table-header{
     margin-left: 1rem!important;
 }
 .table-header h4{
-    color: #155724;
+    color: #438753;
 }
 
 .card{
@@ -65,3 +147,76 @@ body{
     padding: 2%;
     
 }
+.Ortitle{
+    font-size: 19px;
+    color: #438753;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #215fa3;
+    border-color: #215fa3;
+}
+.btn-warning {
+    color: #eff0f1;
+    background-color: #d58016;
+    border-color: #d58016;
+}
+.btn-warning:hover {
+    color: #eff0f1;
+    background-color: #d58016;
+    border-color: #d58016;
+}
+.btn-success {
+    color: #fff;
+    background-color: #438753;
+    border-color: #438753;
+}
+.studio {
+    padding-right: 20px;
+}
+.nav-icon a{
+  font-size: 20px;
+  margin-right: 32px;
+}
+
+/* Responsive for Mobile  */
+
+@media(max-width:576px){
+    .fcard-header2 a{
+        margin-right: 1rem;
+    }
+    .fcard-header1{
+        display: inline-block !important;
+    }
+    .fcard-header1 a {
+        padding: 6px;
+        font-size: 13px;
+    
+    }
+    .mt-5, .my-5 {
+        margin-top: 2rem!important;
+    }
+    .h2, h2 {
+        font-size: 1.45rem;
+    }  
+    .sarch{
+        font-size: 13px;
+    }  
+    .collapse:not(.show) {
+        display: contents;
+    }
+    .nav-icon a{
+        font-size: 16px;
+        margin-right: 22px;
+      }
+    
+}
+@media (max-width:1020px){
+    .collapse:not(.show) {
+        display: contents;
+    }
+
+}
+
+
+

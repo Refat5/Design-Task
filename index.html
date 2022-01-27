@@ -4,10 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
     <link rel="stylesheet" href="css/style.css">
     <title>Gain Solution</title>
     
@@ -15,15 +16,15 @@
   <body >
 
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><i class="fas fa-bars"></i></a>
-        <button type="button" class="btn btn-default" aria-label="Left Align">
-            <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+        
+        <button type="button" class="btn btn-default">
+            <i class="far fa-align-left size:5x"></i>
           </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="ml-auto d-flex" >
-                <a class="mr-3" style="font-size: 20px;" href=""> <i class="far fa-globe"></i></a>
-                <a class="mr-3" style="font-size: 20px;" href="#"> <i class="fal fa-bell-exclamation"></i> </a>
-                <a class="mr-3" style="font-size: 20px;" href="#"> <i class="fad fa-sun"></i></a>
+            <div class="ml-auto d-flex nav-icon" >
+                <a  href=""> <i class="far fa-globe"></i></a>
+                <a  href="#"> <i class="fal fa-bell-exclamation"></i> </a>
+                <a  href="#"> <i class="fad fa-sun"></i></a>
             </div>
             
             <div class="d-flex align-items-center " style="border-left: 1px solid rgb(167, 163, 163);">
@@ -47,6 +48,8 @@
         </div>
     </nav>
     
+    
+  
  
     <div class="container-fluid mt-2">
         <h2>02070 Stanford Ramp, 123, Dhaka, Bangladesh</h2>
@@ -54,7 +57,7 @@
          <div class="col-lg-9 col-md-12 ">
             <button class="btn btn-dark mt-3">Showing Lease - #01  <i class="far fa-angle-down"></i></button>
             <div class="card">
-                <div class="d-flex   fcard-header1">
+                <div class="d-flex flex-sm-row flex-column   fcard-header1">
                     <a href="#"> <i class="fal fa-file-spreadsheet"></i>  Rent</a>
                     <a href="#"> <i class="fal fa-user"></i>  Landioard</a>
                     <a href="#"> <i class="far fa-dollar-sign"></i> Finalcial</a>
@@ -64,33 +67,28 @@
                     <a href="#"> <i class="fal fa-users"></i> Interest Form</a>
                     <a href="#"> <i class="fal fa-file"></i> Files</a>
                 </div>
-                <div class="mt-4">
+                <div class="mt-5">
                     <div class="d-flex fcard-header2">
-                        <a href="#" class="mr-4">Summary</a>
-                        <a href="#" class="mr-4">Rent Invoices</a>
-                        <a href="#" class="mr-4">Payments</a>
-                        <a href="#" class="mr-4">Correction</a>
+                        <a href="#" >Summary</a>
+                        <a href="#" >Rent Invoices</a>
+                        <a href="#" >Payments</a>
+                        <a href="#" >Correction</a>
                     </div>
                 </div>
 
                 <div class="row  mt-5">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-5 mb-3">
                         <span>23 of 34 items found</span>
                     </div>
-                    <div class="col-lg-6 ml-auto">
+                    <div class="col-lg-5 col-md-7 ml-auto">
                         <div class="d-flex">
-                            <button class="btn btn-dark btn-sm action-btn">Actions   <i class="far fa-angle-up ml-1"></i>  </button>
+                            <button class="btn btn-dark btn-sm action-btn"><i class="far fa-bolt mr-2 mt-1"></i>Actions   <i class="far fa-angle-down ml-1"></i>  </button>
                            
-                                <div class="input-group ">
-                                    <input class="form-control  border border-right-0" type="search" value="search" id="example-search-input">
-                                    <span class="input-group-append">
-                                        <button class="btn btn-outline-secondary border-left-0 border" type="button">
-                                            <i class="fa fa-search"></i>
-                                        </button>
-                                      </span>
-                             
+                            <div class="sarch">
+                            <div id="search"> <input id="input" placeholder="Search..." /> <button id="button"><i class="fa fa-search"></i></button>
                             </div>
-                         
+                            
+                        </div>
 
                           
                         </div>
@@ -110,38 +108,19 @@
                         <div class="table-header ">
                             <h4>Tenant Name One</h4>
                             <div class="d-flex">
-                                <button class="btn btn-dark btn-sm">Invoice #123</button>
+                                <button class="btn btn-primary btn-sm">Invoice #123</button>
                                 <button class="btn btn-warning btn-sm ml-2 payment-status" >Partially credited</button>
+                                <button class="btn btn btn-sm ml-2 icon-alert " ><i class="far fa-exclamation-triangle"></i></button>
 
+                            
                             </div>
+                           
                         </div>
+                        <div class="ml-auto"><i class="far fa-bolt"></i></div>
                     </div>
-                    <!-- <div class="d-flex mt-4 justify-content-between" style="width: 100%; padding: 0 30;">
-                        <div class="text-center">
-                            <span>12, 134</span><br>
-                            <small>Rent Invoice</small>
-                        </div>
-                        <div style="border-right: 1px solid #ddd;"></div>
-                        <div class="text-center">
-                            <span>0</span><br>
-                            <small>Fees</small>
-                        </div>
-                        <div class="text-center">
-                            <span>24.08.21</span><br>
-                            <small>Due Date</small>
-                        </div>
-                        <div class="text-center">
-                            <span>1000</span><br>
-                            <small>Commissions</small>
-                        </div>
-                        <div style="border-right: 1px solid #ddd;"></div>
-                        <div class="text-center">
-                            <span>3000</span><br>
-                            <small>Payouts</small>
-                        </div>
-                    </div> -->
+  
                     <div class="row table-body mt-3">
-                        <div class="col-lg-3 col-md-3  side-border">
+                        <div class="col-lg-3 col-md-3 col-sm-6 side-border">
                         
                             <div class="text-center">
                                 <strong class="invoice-rent">12, 134</strong><br>
@@ -149,14 +128,14 @@
                             </div>
                          
                         </div>
-                        <div class="col-lg-2 col-md-2 ">
+                        <div class="col-lg-2 col-md-2  col-sm-6 ">
                             <div class="text-center">
                                 <strong>0</strong><br>
                                 <small>Fees</small>
                             </div>
                 
                         </div>
-                        <div class="col-lg-3 col-md-2 ">
+                        <div class="col-lg-3 col-md-2  col-sm-6">
                          
                             <div class="text-center ">
                                 <strong>24.08.21</strong><br>
@@ -164,7 +143,7 @@
                             </div>
                          
                         </div>
-                        <div class="col-lg-2 col-md-2  side-border">
+                        <div class="col-lg-2 col-md-2 col-sm-6  side-border">
                          
                             
                             <div class="text-center">
@@ -174,7 +153,7 @@
                          
                          
                         </div>
-                        <div class="col-lg-2 col-md-2 ">
+                        <div class="col-lg-2 col-md-2  col-sm-6">
                          
                             
                             <div class="text-center amount1">
@@ -197,11 +176,16 @@
                         <div class="table-header ">
                             <h4>Tenant Name One</h4>
                             <div class="d-flex">
-                                <button class="btn btn-dark btn-sm">Invoice #123</button>
+                                <button class="btn btn-primary btn-sm">Invoice #123</button>
                                 <button class="btn btn-success btn-sm ml-2 payment-status" >Paid</button>
+                                <button class="btn btn btn-sm ml-2 icon-alert " ><i class="far fa-exclamation-triangle"></i></button>
+                                <button class="btn btn btn-sm ml-2 icon-alert " ><i class="fal fa-bell-exclamation"></i> #2</button>
+
 
                             </div>
                         </div>
+                        <div class="ml-auto"><i class="far fa-bolt"></i></div>
+
                     </div>
                 
                     <div class="row table-body mt-3">
@@ -261,12 +245,15 @@
                         <div class="table-header ">
                             <h4>Tenant Name One</h4>
                             <div class="d-flex">
-                                <button class="btn btn-dark btn-sm">Invoice #123</button>
+                                <button class="btn btn-primary btn-sm">Invoice #123</button>
                                 <button class="btn btn-info btn-sm ml-2 payment-status" >Partially Paid</button>
+                                <button class="btn btn btn-sm ml-2 icon-alert " ><i class="far fa-exclamation-triangle"></i></button>
 
 
                             </div>
                         </div>
+                        <div class="ml-auto"><i class="far fa-bolt"></i></div>
+
                     </div>
                 
                     <div class="row table-body mt-3">
@@ -325,70 +312,77 @@
                 <div class="card image-btn-card">
                    
                         <div class="card-body">
-                            <span>02070 Stanford Ramp, 123, Dhaka, Bangladesh</span>
-                            <div class="d-flex">
-                                <button class="btn btn-dark btn-sm payment-status" >#123</button>
+                            <strong>02070 Stanford Ramp, 123, Dhaka, Bangladesh</strong>
+                            <div class="d-flex mt-2">
+                                <button class="btn btn-secondary btn-sm payment-status" >#123</button>
                                 <button class="btn btn-warning btn-sm ml-2 payment-status"  >Vacant</button>
                                 <button class="btn btn-danger btn-sm ml-2 payment-status" >Maintanence</button>
                             </div>
                             <div class="mt-3 d-flex">
-                                <li>Studio</li>
+                                <li class="studio">Studio</li>
                                 <li>Shared room</li>
                             </div> 
                        
-                        <div class="mt-2">
-                            <div> <i class="fal fa-code-branch mr-2"></i>Main Branch</div>
+                        <div class="mt-2 div-branch">
+                            <div> <span> <i class="fal fa-code-branch "></i>Main Branch </span></div>
                             <div class="row">
-                                <div class="col-6"> <i class="fal fa-home mr-2"></i>1200m/sq </div>
-                                <div class="col-6"> <i class="fal fa-building mr-2" ></i>Apt-0123  </div>
-                                <div class="col-6"> <i class="fal fa-building mr-2"></i>Floor-12</div>
-                                <div class="col-6"> <i class="fal fa-bed mr-2"></i>12</div>
+                                <div class="col-6"> <span><i class="fal fa-home "></i>1200m/sq </span></div>
+                                <div class="col-6"> <span> <i class="fal fa-building " ></i>Apt-0123  </span> </div>
+                                <div class="col-6"> <span><i class="fal fa-clone"></i>Floor-12 </span></div>
+                                <div class="col-6"> <span><i class="fal fa-bed "></i>12 </span></div>
                             
                             
                             </div>
                         </div>
-    
-                        <div class="mt-5 d-flex align-items-center">
-                            <div>
-                                <img src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
-                                    height="50px"
-                                    width="50px"
-                                    style="border-radius: 50%;"
-                                />
-                            </div>
-                            <div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6">
+                            <div class="mt-5 d-flex align-items-center">
                                 <div>
-                                    <span>Organization name</span>
+                                    <img src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
+                                        height="50px"
+                                        width="50px"
+                                        style="border-radius: 50%;"
+                                    />
                                 </div>
-                                <small>Account</small>
-                            </div>
-                        </div>
-                        <div class="mt-3">
-                            <span>Dhaka, Bangladesh</span><br>
-                            <span>accountmail@demo.com</span>
-                        </div>
-    
-                        <div class="mt-5 d-flex align-items-center">
-                            <div>
-                                <img src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
-                                    height="50px"
-                                    width="50px"
-                                    style="border-radius: 50%;"
-                                />
-                            </div>
-                            <div>
-                                <div>
-                                    <span>Faysal Preet</span>
+                                <div class="ml-2">
+                                    <div class="Ortitle">
+                                        <span> Organization name</span>
+                                    </div>
+                                    <small>Account</small>
                                 </div>
-                                <small>Contact Person</small>
+                            </div>
+                            <div class="mt-3">
+                                <span> <i class="fal fa-map-marker-alt"></i> Dhaka, Bangladesh</span><br>
+                                <span><i class="fal fa-envelope"></i>accountmail@demo.com</span>
                             </div>
                         </div>
-                        <div class="mt-3">
-                            <span>Dhaka, Bangladesh</span><br>
-                            <span>accountmail@demo.com</span><br>
-                            <span>+47 89 09 85 82</span><br>
-                            <span>12344335553</span>
+                        <div class="col-lg-12 col-md-6">
+                            <div class="mt-5 d-flex align-items-center">
+                                <div>
+                                    <img src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
+                                        height="50px"
+                                        width="50px"
+                                        style="border-radius: 50%;"
+                                    />
+                                </div>
+                                <div class="ml-2">
+                                    <div class="Ortitle">
+                                        <span>Faysal Preet</span>
+                                    </div>
+                                    <small>Contact Person</small>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <span> <i class="fal fa-map-marker-alt"></i> Dhaka, Bangladesh</span><br>
+                                <span>  <i class="fal fa-envelope"></i>accountmail@demo.com</span><br>
+                                <span>  <i class="fal fa-phone-alt"></i>+47 89 09 85 82</span><br>
+                                <span> <i class="fal fa-folder"></i>12344335553</span>
+                            </div>
                         </div>
+                    </div>
+                       
+    
+                    
                         <div class="mt-5 d-flex align-items-center">
                             <div>
                                 <img src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg"
@@ -397,11 +391,16 @@
                                     style="border-radius: 50%;"
                                 />
                             </div>
-                            <div>
-                                <div>
+                          <div class="ml-2">
+                                <div class="Ortitle">
+                              
                                     <span>Partner Owner Name</span>
-                                </div>
+                                 </div> 
+                                <div class="d-flex justify-content-between">
                                 <small>Owner</small>
+                                <a href=""> <i class="fal fa-edit"></i></a>
+                               </div>
+                            </div>
                             </div>
                         </div>
                     </div>
